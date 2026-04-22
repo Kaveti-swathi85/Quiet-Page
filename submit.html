@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Key</title>
+</head>
+<body style="background:black; color:lime; text-align:center; margin-top:20%;">
+    <h2>Enter Access Key</h2>
+    <input type="text" id="key" placeholder="Enter key">
+    <button onclick="checkKey()">Submit</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkKey() {
+            var key = document.getElementById("key").value;
+            if (key === "12345") {
+                document.getElementById("result").innerHTML = "✅ Flag: flag{12345}";
+            } else {
+                document.getElementById("result").innerHTML = "❌ Wrong key!";
+            }
+        }
+    </script>
+</body>
+</html>
